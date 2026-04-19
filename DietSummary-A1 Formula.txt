@@ -1,0 +1,1 @@
+=QUERY(Diet!A:Z, "SELECT B, SUM(F) WHERE B IS NOT NULL AND E = 'Dry Food' AND B >= date '"&TEXT(TODAY()-7, "yyyy-mm-dd")&"' GROUP BY B LABEL SUM(F) 'Total Amount'", 1)
